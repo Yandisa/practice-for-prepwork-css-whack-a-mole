@@ -1,9 +1,45 @@
 /* Your code here */
 
+.wgs  {
+  position:relative;
+  display: inline;
+  height: 241px;
+  width: 320px;
+}
+.wgs__mole-head  {
+    position:absolute ;
+    width:188px;
+    height: 178px;
+    padding-left: 54px;
+    transition:margin-top .25s ease;
+}
+.wgs__dirt-pile {
+    position: relative;
+    height: 110px;
+    width: 320px;
+    margin-top: 131px;
+}
+
+.wgs__mole-head--hidden {
+    margin-top: 241px;
+    visibility: hidden;
+}
+.pf {
+    display: grid;
+    grid-template-rows: 2;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.wgs__mole-head--whacked {
+  transform: scale(1.2);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
 
 
 /* UNCOMMENT THE CODE BELOW WHEN DIRECTED */
-/* .sb {
+ .sb {
   background-color: cornflowerblue;
   border-bottom: 1px solid #645DED;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
@@ -12,17 +48,17 @@
   font-size: 30px;
   margin-bottom: 50px;
   padding: 10px 20px;
-} */
+}
 
-/* .sb__mole-counter {
+.sb__mole-counter {
   flex: 1 0 0;
   text-align: right;
-} */
+}
 
-/* .sb__score-holder {
+.sb__score-holder {
   flex: 1 0 0;
-} */
+}
 
-/* .sb__game-over--hidden {
+.sb__game-over--hidden {
   display: none;
-} */
+}
